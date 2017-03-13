@@ -4,11 +4,11 @@
 - slug: nodejs
   name: NodeJS
 
-- slug: java
-  name: Java
-
 - slug: mongodb
   name: MongoDB
 
 - slug: git
   name: Git
+
+  - slug: salesforce
+  name: Salesforce
