@@ -10,5 +10,5 @@
 - slug: git
   name: Git
 
-  - slug: salesforce
+- slug: salesforce
   name: Salesforce
