@@ -1,21 +1,6 @@
 @charset "UTF-8";
-/*
 
-  Pixyll
 
-  A simple, beautiful theme for Jekyll that emphasizes content rather than
-  aesthetic fluff.
-
-  Best served with BASSCSS (http://jxnblk.github.io/basscss)
-
-  Crafted with <3 by John Otander (@4lpine) - ©2014 John Otander
-  MIT License http://opensource.org/licenses/MIT
-
-*/
-
-body {
-  font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
-}
 
 html, body {
   height: 100%;
@@ -254,7 +239,7 @@ textarea.input {
 }
 
 p {
-  font-weight: 300;
+  font-size: 16;
   line-height: 1.5;
   color: #eaeaea;
 }
