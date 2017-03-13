@@ -10,10 +10,6 @@
   name: NodeJS
   color: '#8CDECE'
 
-- slug: java
-  name: Java
-  color: '#FF5050'
-
 - slug: mongodb
   name: MongoDB
   color: '#779911'
@@ -23,7 +19,7 @@
   name: Git
   color: '#229193'
 
-  - slug: salesforce
+- slug: salesforce
   name: Salesforce
   color: '#009293'
 
