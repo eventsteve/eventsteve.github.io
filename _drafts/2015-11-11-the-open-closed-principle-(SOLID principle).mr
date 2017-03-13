@@ -1,0 +1,7 @@
+How Can Something Be Open And Closed At The Same Time?
+
+The Open Closed Principle's motivation is to minimize code reformatting. Classes and functions should be Open for extension, closed for modification. If you are having to reformat the base class for every subclass necessary, then you are probably violating the Open Closed Principle. Let's take an example which first violates the principle, then modify it to satisfy our conditions.
+
+
+
+http://www.devanpatel.me/solid-oop-open-closed-principle-solid/
