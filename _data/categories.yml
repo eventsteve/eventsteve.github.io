@@ -1,0 +1,27 @@
+- slug: manga
+  name: Manga
+  color: '#669111'
+
+- slug: javasript
+  name: JavaScript
+  color: '#666699'
+
+- slug: nodejs
+  name: NodeJS
+  color: '#8CDECE'
+
+- slug: mongodb
+  name: MongoDB
+  color: '#779911'
+
+
+- slug: git
+  name: Git
+  color: '#229193'
+
+- slug: salesforce
+  name: Salesforce
+  color: '#009293'
+
+
+
