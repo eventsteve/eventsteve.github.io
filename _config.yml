@@ -31,7 +31,7 @@ post_preview_image: false
 # Facebook Page integration
 # (for instant articles and other stuff)
 fb_page: true
-fb_page_id:eventsteve
+fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
