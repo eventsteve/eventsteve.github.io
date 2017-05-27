@@ -8,3 +8,8 @@
     Follow him on <a href="https://twitter.com/4lpine">Twitter</a>.
   </p>
 </div>
+
+
+{% if page.comments %}
+	{% include disqus.html %}
+{% endif %}
