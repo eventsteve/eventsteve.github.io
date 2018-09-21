@@ -37,6 +37,36 @@ Get hands-on experience learning the differences between network load balancers 
 
 ## Create multiple web server instances
 
+To simulate serving from a cluster of machines, we'll create a simple cluster of Nginx web servers that will serve static content using Instance Templates and Managed Instance Groups. Instance Templates lets you to define what every virtual machine in the cluster will look like (disk, CPUs, memory, etc), and a Managed Instance Group instantiates a number of virtual machine instances for you using the Instance Template.
+
+First, create a startup script that will be used by every virtual machine instance to setup Nginx server upon startup:
+
+
+```bash
+cat << EOF > startup.sh
+#! /bin/bash
+apt-get update
+apt-get install -y nginx
+service nginx start
+sed -i -- 's/nginx/Google Cloud Platform - '"\$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
+EOF
+```
+
+Second, create an instance template that will use the startup script:
+
+```bash
+gcloud compute instance-templates create nginx-template \
+         --metadata-from-file startup-script=startup.sh
+EOF
+```
+(Output)
+
+```bash
+Created [...].
+NAME           MACHINE_TYPE  PREEMPTIBLE CREATION_TIMESTAMP
+nginx-template n1-standard-1             2015-11-09T08:44:59.007-08:00
+```
+
 Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
 ![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/3953273590_704e3899d5_m.jpg)
