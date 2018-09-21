@@ -21,13 +21,13 @@ In this hands-on lab, you'll learn the differences between a network load balanc
 
 There are two types of <a href="https://cloud.google.com/compute/docs/load-balancing-and-autoscaling#network_load_balancing">load balancers in Google Cloud Platform</a>:
 
-      <a href="https://cloud.google.com/load-balancing/docs/network/">L3 Network Load Balancer</a>
-      <a href="https://cloud.google.com/load-balancing/docs/https/">L7 HTTP(s) Load Balancer</a>
+     *  <a href="https://cloud.google.com/load-balancing/docs/network">L3 Network Load Balancer</a>
+     *  <a href="https://cloud.google.com/load-balancing/docs/https">L7 HTTP(s) Load Balancer</a>
 This labs will take you through the steps to setup both types of load balancers.
 
 We encourage students to type the commands themselves, to help encourage learning of the core concepts. Many labs will include a code block that contains the required commands. You can easily copy and paste the commands from the code block into the appropriate places during the lab.
 
-What you'll do
+**What you'll do**
 
 Setup a network load balancer.
 
@@ -35,7 +35,7 @@ Setup a HTTP(s) load balancer
 
 Get hands-on experience learning the differences between network load balancers and HTTP load balancers.
 
-## Body text
+## Create multiple web server instances
 
 Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
