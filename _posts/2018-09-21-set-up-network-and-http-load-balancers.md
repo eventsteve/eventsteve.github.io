@@ -21,7 +21,7 @@ In this hands-on lab, you'll learn the differences between a network load balanc
 
 There are two types of <a href="https://cloud.google.com/compute/docs/load-balancing-and-autoscaling#network_load_balancing">load balancers in Google Cloud Platform</a>:
 
-     *  <a href="https://cloud.google.com/load-balancing/docs/network">L3 Network Load Balancer</a>
+      L3 <a href="https://cloud.google.com/compute/docs/load-balancing-and-autoscaling#network_load_balancing">load balancers in Google Cloud Platform</a>
      *  <a href="https://cloud.google.com/load-balancing/docs/https">L7 HTTP(s) Load Balancer</a>
 This labs will take you through the steps to setup both types of load balancers.
 
@@ -57,7 +57,6 @@ Second, create an instance template that will use the startup script:
 ```bash
 gcloud compute instance-templates create nginx-template \
          --metadata-from-file startup-script=startup.sh
-EOF
 ```
 (Output)
 
