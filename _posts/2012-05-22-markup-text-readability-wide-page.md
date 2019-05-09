@@ -1,5 +1,5 @@
 ---
-title: "Wide Single Layout Page"
+title: "How to work with UUID in MySQL"
 classes: wide
 excerpt: "A page with `classes: wide` set to expand the main content's width."
 tags: 
@@ -10,14 +10,30 @@ tags:
 
 When using `layout: single` add the following front matter to a page or post to widen the main content:
 
-```yaml
+```sql
 classes: wide
 ```
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
+UUIDs are not supported directly in MySql, so working with them in SQL can be a bit of a challenge, as they are stored at BINARY(16) and as such are not human readable when doing a simple SELECT * FROM TABLE.
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
+```sql
+SELECT *, 
+     LOWER(CONCAT(
+     SUBSTR(HEX(uuid), 1, 8), '-',
+     SUBSTR(HEX(uuid), 9, 4), '-',
+     SUBSTR(HEX(uuid), 13, 4), '-',
+     SUBSTR(HEX(uuid), 17, 4), '-',
+     SUBSTR(HEX(uuid), 21)
+ ))
+from table_name;
+```
 
+
+```sql
+INSERT INTO table_name (uuid_col)
+VALUES (UNHEX(REPLACE('161a950a-38e1-4a2e-88c2-dcbdf6547566', '-', '')));
+
+```
 ## Cupidatat 90's lo-fi authentic try-hard
 
 In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
