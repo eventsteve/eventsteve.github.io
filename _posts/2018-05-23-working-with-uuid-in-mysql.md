@@ -1,5 +1,5 @@
 ---
-title: "How to work with UUID in MySQL"
+title: "Working with UUID in MySQL"
 classes: wide
 excerpt: "A page with `classes: wide` set to expand the main content's width."
 tags: 
