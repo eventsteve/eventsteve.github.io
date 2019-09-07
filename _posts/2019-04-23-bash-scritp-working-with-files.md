@@ -7,15 +7,11 @@ tags:
   - bashscript
 ---
 
-```bash
-classes: wide
-```
-
 Working with files
 
  Counting line of code
-```bash
-ind . -name '*.java' | xargs wc -l | sort >> 1.txt;
+```script
+find . -name '*.java' | xargs wc -l | sort >> 1.txt;
 ```
 
 
@@ -29,5 +25,3 @@ ind . -name '*.java' | xargs wc -l | sort >> 1.txt;
 
 
 *  1*
-*  1*
-**  2*
