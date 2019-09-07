@@ -1,4 +1,3 @@
-
 ---
 title: "Bash Scripts to work with files"
 classes: wide
@@ -13,8 +12,6 @@ Working with files
 ```script
 find . -name '*.java' | xargs wc -l | sort >> 1.txt;
 ```
-
-
 
 
 # MySQL UUID vs. Auto-Increment INT as primary key
