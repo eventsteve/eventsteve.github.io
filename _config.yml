@@ -59,10 +59,10 @@ search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : "algolia"
 algolia:
-  application_id         : "W3GQJB3GMK"
-  index_name             : "eventsteve-github"
-  search_only_api_key    : "51cd550653bf66ac57b56124758c261d" 
-  ALGOLIA_API_KEY        : "43a6cf3a8d43cd9dadf7c7b77b60ca11"
+  application_id         : "PK6WOYV5VX"
+  index_name             : "github-blog"
+  search_only_api_key    : "b4f276bef8a851370aceba7b7ee274dc" 
+  ALGOLIA_API_KEY        : "b8b2541604c2772fab9b20b54042d343"
   powered_by             : true
 
 # SEO Related
