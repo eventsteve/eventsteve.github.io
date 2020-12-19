@@ -1,0 +1,3 @@
+[submodule "nyt-2020-election-scraper"]
+	path = nyt-2020-election-scraper
+	url = https://github.com/eventsteve/nyt-2020-election-scraper
